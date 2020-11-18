@@ -5,6 +5,11 @@ app = Flask(__name__)
 def hello_world():
     return 'Base action'
 
-@app.route('/Zubkov')
+@app.route('/v2')
 def v2():
+    return 'Second action'
+
+@app.route('/Zubkov')
+def Zubkov():
     return 'Hello from CI with GitHub Actions by Zubkov'
+
